@@ -11,7 +11,9 @@ font-size: 16px;
 body {
 line-height: 1.4;
 font-family: "Open Sans", "Helvetica", sans-serif;
+color: rgb(50, 50, 50);
 }
+
 
 /*Header Section*/
 
@@ -22,6 +24,11 @@ header {
   background-color: white;
   height: 64px;
   padding: 0 24px;
+  z-index: 5;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 header .logo {
@@ -29,17 +36,157 @@ header .logo {
   align-items: center;
 }
 
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
 nav ul li {
-  display: inline;
   margin-left: 16px;
 }
 
-header p {
-  font-size: 1.3rem;
+h3 {
+  font-size: 1.4rem;
+}
+
+header h3 {
   font-weight: lighter;
   letter-spacing: 2px;
 }
 
 .logo img {
-  height: 32px;
+  height: 40px;
+}
+
+/*Banner Section*/
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: rgba(50, 255, 181, 0.6);
+  margin-top: 64px;
+}
+
+.banner img {
+  width: 57%;
+  padding: 32px 24px;
+}
+
+.banner .content {
+  margin-left: 24px;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  font-family: "Roboto";
+  line-height: 1;
+}
+
+.content h1 {
+  margin-bottom: 20px;
+  color: rgb(40, 40, 40);
+  max-width:370px;
+}
+
+.b1 {
+  font-size: 1.2rem;
+}
+
+.content .b1 {
+  margin-bottom: 40px;
+  max-width: 300px;
+}
+
+.banner .btn {
+  color: white;
+  background-color: rgb(55, 68, 255);
+  padding: 12px 0;
+  text-align: center;
+  width: 250px;
+}
+
+/*Secondary Information*/
+
+.information {
+  display: flex;
+}
+
+.main img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.main {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.main h2 {
+  margin-bottom: 15px;
+}
+
+
+.main .quote {
+  text-indent: -.4em;
+  width: 90%;
+  color: rgb(157, 29, 245);
+  font-style: italic;
+}
+
+.b3 {
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.main .b3 {
+  margin-top: 24px;
+  color: rgb(157, 29, 245);
+  font-style: italic;
+}
+
+.secondary {
+  width: 40%;
+}
+
+.segment {
+  border: 2px solid rgba(216, 216, 216, .5);
+  display: flex;
+  width: 100%;
+}
+
+.segment img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+  align-self: center;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.segment .content {
+  margin-right: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 65%;
+}
+
+.information .content p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+}
+
+.link {
+  color: rgb(55, 68, 255);
 }
