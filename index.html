@@ -9,9 +9,10 @@
   <body>
     <!--Header Section-->
     <header>
-      <div class="logo">
+      <a class="logo" href="#">
         <img src="resources/images/ic-logo.svg" alt="Colmar Academy icon">
         <h3><span style="font-weight: bold;">COLMAR</span>ACADEMY</h3>
+      </a>
       </div>
       <nav>
         <ul>
@@ -22,8 +23,22 @@
         </ul>
       </nav>
     </header>
+    <header class="mobile-header">
+        <a href="#">
+          <img src="resources/images/ic-logo.svg" alt="Colar Academy logo">
+        </a>
+        <a href="#">
+          <img src="resources/images/ic-online.svg" alt="Online icon">
+        </a>
+        <a href="#">
+          <img src="resources/images/ic-on-campus.svg" alt="On campus icon">
+        </a>
+        <a href="#">
+          <img src="resources/images/ic-login.svg" alt="login icon">
+        </a>
+    </header>
     <!--Banner Section-->
-    <div class="banner">
+    <div class="container" id="banner">
       <img src="resources/images/banner.jpg" alt="image of students">
       <div class="content">
         <h1>Learn something new everyday</h1>
@@ -34,8 +49,8 @@
       </div>
     </div>
     <!--Supporting Information-->
-    <div class="information">
-      <div class="main">
+    <div class="section" id="info">
+      <div class="container" id="main">
         <img src="resources/images/information-main.jpg" alt="picture of a student">
         <h2>It doesn't hurt to keep practicing</h2>
         <p class="quote">"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accusan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
@@ -43,27 +58,30 @@
       </div>
       <div class="secondary">
         <div class="segment">
-          <img src="resources/images/information-orientation.jpg" alt="image of students walking on campus">
+          <img id="desktop" src="resources/images/information-orientation.jpg" alt="image of students walking on campus">
+          <img id="mobile" src="resources/images/information-orientation-mobile.jpg" alt="students walking on campus">
           <div class="content">
             <h3>Orientation date</h3>
             <p>Tue 10/11 &amp; Wed 10/12: 8am–3pm</p>
-            <p><a href="#">Read more</a></p>
+            <p id="link"><a href="#">Read more</a></p>
           </div>
         </div>
         <div class="segment">
-          <img src="resources/images/information-campus.jpg" alt="image of campus">
+          <img id="desktop" src="resources/images/information-campus.jpg" alt="image of campus">
+          <img id="mobile" src="resources/images/information-campus-mobile.jpg" alt="image of campus">
           <div class="content">
             <h3>Our Campus</h3>
             <p>Find which campus is close by you</p>
-            <p><a href="#">Read more</a></p>
+            <p id="link"><a href="#">Read more</a></p>
           </div>
         </div>
         <div class="segment">
-          <img src="resources/images/information-guest-lecture.jpg" alt="image of Oliver Sack">
+          <img id="desktop" src="resources/images/information-guest-lecture.jpg" alt="image of Oliver Sack">
+          <img id="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="image of Oliver Sack">
           <div class="content">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <p><a href="#">Read more</a></p>
+            <p id="link"><a href="#">Read more</a></p>
           </div>
         </div>
       </div>
@@ -121,37 +139,46 @@
           </div>
         </div>
       </div>
+      <div class="subjects-mobile">
+        <h3>Software engineering</h3>
+        <h3>Computer art</h3>
+        <h3>Design</h3>
+        <h3>Data</h3>
+        <h3>Business</h3>
+        <h3>Marketing</h3>
+      </div>
     </div>
     <!--Thesis Section-->
-    <div class="thesis">
+    <div class="section-header">
       <h2>Thesis exhibit</h2>
-      <div class="information">
-        <div class="main">
-          <div class="wrapper-video">
-            <video width="100%" height="auto" onclick="this.paused ? this.play() : this.pause()">
-              <source type="video/mp4" src="resources/videos/thesis.mp4">
-            </video>
-            <div class="overlay"></div>
-            <img id="playpause" src="resources/images/play_button.svg" alt="">
-          </div>
-          <h3>Reimagine urban</h3>
-          <p class="quote">"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accusan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+    </div>
+    <div class="section" id="thesis">
+      <div class="container" id="main">
+        <div class="wrapper-video">
+          <video width="100%" height="auto" onclick="this.paused ? this.play() : this.pause()">
+            <source type="video/mp4" src="resources/videos/thesis.mp4">
+          </video>
+          <div class="overlay"></div>
+          <img id="playpause" src="resources/images/play_button.svg" alt="">
         </div>
-        <div class="secondary">
-          <div class="segment">
-            <img src="resources/images/thesis-fisma.jpg" alt="image of Fisma">
-            <div class="content">
-              <h3>Fisma: Design and Prototype</h3>
-              <p>Designer showcase of new prototype product</p>
-            </div>
+        <h3>Reimagine urban</h3>
+        <p class="quote">"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accusan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+      </div>
+      <div class="secondary">
+        <div class="segment">
+          <img id="desktop" src="resources/images/thesis-fisma.jpg" alt="image of Fisma">
+          <div class="content">
+            <h3>Fisma: Design and Prototype</h3>
+            <p>Designer showcase of new prototype product</p>
           </div>
-          <div class="segment">
-            <img src="resources/images/thesis-now-and-then.jpg" alt="image of the Empire State Building">
-            <div class="content">
-              <h3>Now and then</h3>
-              <p>Research study about New York</p>
-            </div>
+        </div>
+        <div class="segment">
+          <img id="desktop" src="resources/images/thesis-now-and-then.jpg" alt="image of the Empire State Building">
+          <div class="content">
+            <h3>Now and then</h3>
+            <p>Research study about New York</p>
           </div>
+        </div>
       </div>
     </div>
     <!--Footer Section-->
